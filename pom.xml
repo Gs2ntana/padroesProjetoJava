@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Informações básicas do projeto -->
+    <groupId>com.example</groupId>
+    <artifactId>DatabaseConnectionSingleton</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>DatabaseConnectionSingleton</name>
+    <description>Demonstração do padrão Singleton para conexão com banco de dados em Java</description>
+
+    <!-- Configurações do build -->
+    <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <plugins>
+            <!-- Plugin para compilar e executar o projeto -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+
+            <!-- Plugin para execução de classes Java -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.0.0</version>
+                <configuration>
+                    <mainClass>main</mainClass> <!-- Nome da sua classe principal -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- Dependências do projeto -->
+    <dependencies>
+        <!-- Dependência para o conector MySQL -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.26</version>
+        </dependency>
+    </dependencies>
+</project>
