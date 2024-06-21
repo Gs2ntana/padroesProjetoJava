@@ -15,7 +15,7 @@
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
         <plugins>
-            <!-- Plugin para compilar e executar o projeto -->
+            <!-- Plugin para compilar o projeto -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -32,7 +32,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.0.0</version>
                 <configuration>
-                    <mainClass>main</mainClass> <!-- Nome da sua classe principal -->
+                    <mainClass>com.example.demo.DatabaseConnectionDemo</mainClass> <!-- Nome da sua classe principal -->
                 </configuration>
             </plugin>
         </plugins>
@@ -44,7 +44,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.26</version>
+            <version>8.0.29</version>
         </dependency>
     </dependencies>
 </project>
